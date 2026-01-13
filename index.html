@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2 class="logo">MyPortfolio</h2>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button onclick="toggleDarkMode()">🌙</button></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section hero page">
+  <div class="hero-shapes">
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+  </div>
+  <h1>Hello, I'm <span>AKI</span></h1>
+  <p>Web Developer | Designer</p>
+  <button onclick="scrollToSection('about')">Explore</button>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section page">
+ <h2>About Me</h2>
+<div class="profile-container">
+  <img src="images/c9442496-06bd-4bb6-83c7-d9ab5dfacbe3.jpg" alt="Profile" />
+</div>
+
+  <p>
+    I am a beginner learning web development, eager to explore the world of coding and design. 
+    I am passionate about creating clean, user-friendly websites that are both functional 
+    and visually appealing. Every day, I enjoy learning new technologies, experimenting with 
+    different tools, and applying what I learn to build small projects.  
+    My goal is to grow my skills step by step, improve my problem-solving abilities, 
+    and eventually contribute to real-world projects that make a difference.
+  </p>
+  <p>
+    I believe that consistent practice, curiosity, and creativity are key to becoming a 
+    confident and capable web developer. I enjoy collaborating with others, sharing ideas, 
+    and finding solutions to challenges along the way. Each project I work on teaches me 
+    something new, and I am excited to continue learning and growing as I build a strong 
+    foundation in web development and design.
+  </p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section page">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <a href="project1/index.html" target="_blank" rel="noopener noreferrer">
+        <img src="images/gis.png" alt="Project 1">
+        <h3>Project 1</h3>
+      </a>
+    </div>
+   
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section page">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 My Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
