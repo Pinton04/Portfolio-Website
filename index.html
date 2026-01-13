@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <nav>
   <h2 class="logo">MyPortfolio</h2>
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -16,7 +17,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><button onclick="toggleDarkMode()">🌙</button></li>
+    <li><button class="dark-mode-btn" onclick="toggleDarkMode()">🌙</button></li>
   </ul>
 </nav>
 
@@ -34,11 +35,10 @@
 
 <!-- About Section -->
 <section id="about" class="section page">
- <h2>About Me</h2>
-<div class="profile-container">
-  <img src="images/c9442496-06bd-4bb6-83c7-d9ab5dfacbe3.jpg" alt="Profile" />
-</div>
-
+  <h2>About Me</h2>
+  <div class="profile-container">
+    <img src="images/c9442496-06bd-4bb6-83c7-d9ab5dfacbe3.jpg" alt="Profile photo of AKI" />
+  </div>
   <p>
     I am a beginner learning web development, eager to explore the world of coding and design. 
     I am passionate about creating clean, user-friendly websites that are both functional 
@@ -57,34 +57,39 @@
 </section>
 
 <!-- Projects Section -->
- <section id="projects" class="section fade-in">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>Simple website built using HTML & CSS.</p>
-      </div>
-
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Responsive portfolio with JavaScript features.</p>
-      </div>
-
-      <div class="card">
-        <h3>Project Three</h3>
-        <p>BASELINE UNDERSTANDING GEOSPATIAL TERRAIN AND AGRICULTURE
-            WITH NPK SENSOR.</p>
+<section id="projects" class="section page fade-in">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Project One</h3>
+      <p>Simple website built using HTML & CSS.</p>
     </div>
-  </section>
 
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>Responsive portfolio with JavaScript features.</p>
+    </div>
+
+    <div class="card">
+      <h3>Project Three</h3>
+      <p>BASELINE UNDERSTANDING GEOSPATIAL TERRAIN AND AGRICULTURE WITH NPK SENSOR.</p>
+    </div>
+  </div>
+</section>
 
 <!-- Contact Section -->
 <section id="contact" class="section page">
   <h2>Contact Me</h2>
   <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Message" rows="5" required></textarea>
+    <label for="name">Your Name</label>
+    <input id="name" type="text" placeholder="Your Name" required>
+
+    <label for="email">Your Email</label>
+    <input id="email" type="email" placeholder="Your Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Message" rows="5" required></textarea>
+
     <button type="submit">Send</button>
   </form>
 </section>
@@ -96,4 +101,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
